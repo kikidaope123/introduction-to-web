@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+  LESSON 25: YOUR FIRST IMAGE
+  ===========================
+  You will learn:
+    * how to show a picture with the <img> tag
+    * the two attributes every image needs: src and alt
+    * what happens when the browser cannot find the picture
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 25: Your first image</title>
+</head>
+<body>
+
+  <h1>Your first image</h1>
+
+  <!--
+    THE <img> TAG
+    <img> is an EMPTY element, like <br>: it has no closing tag.
+    It needs two attributes:
+
+        src   the SOURCE: the path to the picture file.
+              It works exactly like href in a link (Lesson 21).
+              Our picture is inside the  images  folder.
+
+        alt   the ALTERNATIVE TEXT: a few words that describe
+              the picture for anybody who cannot see it.
+  -->
+  <img src="images/jollof-rice.jpg" alt="A plate of jollof rice with a piece of fried chicken">
+
+  <p>Jollof rice with chicken: the favourite party food in Nigeria.</p>
+
+  <!--
+    WHO NEEDS THE alt TEXT?
+      1. Blind people. Their screen reader reads the alt text aloud.
+      2. People on a slow network, when the picture does not load.
+      3. Search engines. They cannot "see" a picture, but they can read.
+
+    THE PICTURE BELOW IS BROKEN ON PURPOSE.
+    The file name is wrong, so the browser cannot find the picture.
+    It shows a small "broken image" sign and the alt text.
+  -->
+  <h2>A broken image</h2>
+  <img src="images/this-file-does-not-exist.jpg" alt="A plate of suya with sliced onions">
+
+  <!--
+    WHEN YOUR PICTURE DOES NOT SHOW, CHECK THESE FOUR THINGS
+      1. Is the file really in the folder you named?
+      2. Is the name spelt exactly right?  jollof-rice  not  jolof-rice
+      3. Is the ending right?  .jpg is not .jpeg and not .png
+      4. Are the capital letters right?  Photo.JPG is not photo.jpg
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Repair the broken image. The real file is called  suya.jpg
+    2. Show a third picture:  images/egusi-soup.jpg
+       Write good alt text for it.
+    3. Put a photo of your own into the  images  folder and show it
+       on this page. Give the file a name with no spaces.
+  -->
+
+</body>
+</html>

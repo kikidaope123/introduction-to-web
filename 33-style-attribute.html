@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+  LESSON 33: A LITTLE COLOUR - THE STYLE ATTRIBUTE
+  ================================================
+  You will learn:
+    * that HTML says what things ARE, and CSS says how they LOOK
+    * how to write a little CSS in the style attribute
+    * six useful CSS properties
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 33: A little colour: the style attribute</title>
+</head>
+<body>
+
+  <!--
+    HTML AND CSS
+    Until now every page has been black and white. HTML only says
+    what each thing IS: a heading, a paragraph, a list.
+    A second language, CSS, says how each thing LOOKS.
+    This lesson is a first taste. Part 12 teaches CSS properly.
+
+    HOW TO WRITE IT
+        <p style="color: green;">
+                  ^^^^^  ^^^^^
+               property  value
+
+      * after the property comes a colon      :
+      * after the value comes a semicolon     ;
+      * CSS uses the American spelling:  color  (not colour)
+  -->
+  <h1 style="color: green;">A little colour</h1>
+
+  <!-- color: the colour of the text. -->
+  <p style="color: red;">This text is red.</p>
+  <p style="color: blue;">This text is blue.</p>
+
+  <!-- background-color: the colour behind the text. -->
+  <p style="background-color: yellow;">This paragraph has a yellow background.</p>
+
+  <!-- You can write several properties. Each one ends with a semicolon. -->
+  <p style="color: white; background-color: green;">White text on a green background.</p>
+
+  <!-- font-size: how big the text is. px means pixels (dots on the screen). -->
+  <p style="font-size: 28px;">This text is 28 pixels high.</p>
+  <p style="font-size: 12px;">This text is only 12 pixels high.</p>
+
+  <!-- text-align: left, center or right. (American spelling again: center.) -->
+  <p style="text-align: center;">This paragraph is in the centre.</p>
+  <p style="text-align: right;">This paragraph is on the right.</p>
+
+  <!-- font-family: the name of the font (the shape of the letters). -->
+  <p style="font-family: Arial;">This paragraph uses the Arial font.</p>
+  <p style="font-family: Courier New;">This paragraph uses the Courier New font.</p>
+
+  <!-- border: a line around the element.  thickness, kind of line, colour. -->
+  <p style="border: 2px solid green;">This paragraph has a green border.</p>
+  <p style="border: 3px dashed orange;">This one has a dashed orange border.</p>
+
+  <!--
+    SOME COLOUR NAMES YOU CAN USE
+      black  white  grey  red  green  blue  yellow  orange  purple
+      pink  brown  gold  navy  teal  maroon  tomato  skyblue
+
+    A WARNING
+      The style attribute is good for a quick test. But imagine a
+      page with fifty paragraphs: you would have to write the same
+      style fifty times! Lesson 34 shows a much better way.
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Make the heading purple and put it in the centre of the page.
+    2. Write a paragraph with gold text on a navy background.
+    3. Write your name in a font size of 40 pixels.
+    4. Experiment: change  color  to  colour  in one style. What happens?
+  -->
+
+</body>
+</html>

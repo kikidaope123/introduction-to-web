@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  LESSON 27: IMAGE FOLDERS AND FILE TYPES
+  =======================================
+  You will learn:
+    * how to write the path to a picture in a folder
+    * the main kinds of picture file: JPG, PNG, SVG, WebP and GIF
+    * which kind to choose for a photo and which for a drawing
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 27: Image folders and file types</title>
+</head>
+<body>
+
+  <h1>Image folders and file types</h1>
+
+  <!--
+    PATHS
+    The src of an image is a path, just like the href of a link.
+
+        html scripts/
+            27-image-paths-and-formats.html    <== this file
+            images/
+                olumo-rock.jpg                 a big picture
+                thumbs/
+                    olumo-rock.jpg             a small copy
+
+    GOOD HABIT: keep all your pictures in one folder called  images.
+  -->
+  <h2>A picture in a folder</h2>
+  <img src="images/olumo-rock.jpg" alt="Olumo Rock and its lift tower under a blue sky"
+       width="320" height="240">
+
+  <h2>A picture in a folder inside a folder</h2>
+  <img src="images/thumbs/olumo-rock.jpg" alt="Olumo Rock, small copy"
+       width="160" height="120">
+
+  <!--
+    FILE TYPES
+    The ending of a file name tells you what kind of picture it is.
+
+      .jpg   for PHOTOGRAPHS. Small files, millions of colours.
+      .png   for SCREENSHOTS, logos and icons. Sharp edges, and it
+             can have see-through parts. Photos saved as PNG are huge.
+      .svg   for DRAWINGS made of shapes: logos, icons, flags, charts.
+             Stays perfectly sharp at ANY size. Very small files.
+      .webp  a newer kind that makes even smaller files than JPG.
+      .gif   for small, simple animations.
+
+    The three pictures below are the SAME photo saved in three ways.
+    They look the same, but look at the size of each file!
+  -->
+  <h2>The same photo saved as three file types</h2>
+  <ul>
+    <li>
+      <img src="images/jollof-rice-small.jpg" alt="Jollof rice, saved as a JPG file"
+           width="320" height="240"><br>
+      jollof-rice-small.jpg is 17 KB
+    </li>
+    <li>
+      <img src="images/jollof-rice-small.webp" alt="Jollof rice, saved as a WebP file"
+           width="320" height="240"><br>
+      jollof-rice-small.webp is 14 KB (the smallest)
+    </li>
+    <li>
+      <img src="images/jollof-rice-small.png" alt="Jollof rice, saved as a PNG file"
+           width="320" height="240"><br>
+      jollof-rice-small.png is 103 KB (six times bigger than the JPG!)
+    </li>
+  </ul>
+
+  <!--
+    SVG: SHARP AT ANY SIZE
+    The flag below is an SVG file of less than 1 KB. We show it
+    small and then large. Both are perfectly sharp.
+    The icon is a tiny PNG of 64 by 64 pixels. Shown large, it
+    becomes blurred, because a PNG is made of pixels.
+  -->
+  <h2>A drawing: SVG and PNG</h2>
+  <p>
+    <img src="images/nigeria-flag.svg" alt="The flag of Nigeria, small" width="60" height="30">
+    <img src="images/nigeria-flag.svg" alt="The flag of Nigeria, large" width="400" height="200">
+  </p>
+  <p>
+    <img src="images/favicon.png" alt="A small green icon, at its real size" width="64" height="64">
+    <img src="images/favicon.png" alt="The same icon made large and blurred" width="200" height="200">
+  </p>
+
+  <!--
+    A PICTURE FROM ANOTHER WEBSITE
+    The src can also be a full web address:
+        <img src="https://example.com/photos/lagos.jpg" alt="...">
+    Be careful! This is called HOTLINKING. If the other website
+    removes or renames the picture, YOUR page breaks. It is safer
+    to keep a copy of the picture in your own images folder,
+    if the owner of the picture allows it (see Lesson 30).
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Show the small copy of another picture from  images/thumbs
+    2. Open the  images  folder and look at the size of each file.
+       Which file is the biggest? Which is the smallest?
+    3. Open  images/nigeria-flag.svg  in your code editor.
+       Surprise: it is text! Change the green to another colour.
+  -->
+
+</body>
+</html>

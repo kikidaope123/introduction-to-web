@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+  LESSON 38: MERGING CELLS
+  ========================
+  You will learn:
+    * colspan: make one cell stretch ACROSS several columns
+    * rowspan: make one cell stretch DOWN several rows
+    * how to count the cells so that the table stays correct
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 38: Merging cells</title>
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px 12px;
+      text-align: center;
+    }
+    thead {
+      background-color: green;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Merging cells</h1>
+
+  <!--
+    colspan="5" means: "this cell is as wide as FIVE columns".
+    rowspan="2" means: "this cell is as tall as TWO rows".
+
+    THE COUNTING RULE
+    Every row of this timetable must add up to 6 columns.
+      * The Break row has 1 header cell + 1 cell with colspan="5".
+            1 + 5 = 6. Correct!
+      * The Wednesday practical has rowspan="2". It fills its own
+        row AND the row below. So in the 10:00 row we write NO cell
+        for Wednesday: that place is already taken.
+  -->
+  <table>
+    <caption>Lecture timetable: 200 Level, Information Technology</caption>
+    <thead>
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">8:00 to 10:00</th>
+        <td>MTH 201</td>
+        <td>IFT 203</td>
+        <!-- This cell stretches DOWN into the next row. -->
+        <td rowspan="2">COS 201<br>practical</td>
+        <td>IFT 211</td>
+        <td>GST 212</td>
+      </tr>
+      <tr>
+        <th scope="row">10:00 to 12:00</th>
+        <td>IFT 205</td>
+        <td>ENT 211</td>
+        <!-- No Wednesday cell here: the cell above covers it. -->
+        <td>COS 201</td>
+        <td>IFT 203</td>
+      </tr>
+      <tr>
+        <th scope="row">12:00 to 1:00</th>
+        <!-- This cell stretches ACROSS all five days. -->
+        <td colspan="5">Break</td>
+      </tr>
+      <tr>
+        <th scope="row">1:00 to 3:00</th>
+        <td>IFT 211</td>
+        <td>MTH 201</td>
+        <td>IFT 205</td>
+        <td>IFT 203<br>practical</td>
+        <td>Free</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--
+    Do you remember the two empty cells in the receipt of Lesson 37?
+    With colspan="3" the word "Total" can stretch across three columns.
+  -->
+  <h2>The receipt, improved</h2>
+  <table>
+    <caption>Receipt from the campus bookshop</caption>
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price each</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Notebook (80 leaves)</td>
+        <td>4</td>
+        <td>₦500</td>
+        <td>₦2,000</td>
+      </tr>
+      <tr>
+        <td>Flash drive (32 GB)</td>
+        <td>1</td>
+        <td>₦6,500</td>
+        <td>₦6,500</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="3">Total</th>
+        <td>₦8,500</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!--
+    COMMON MISTAKE
+      Forgetting to remove a cell after adding colspan or rowspan.
+      The row then has too many cells and one cell sticks out
+      of the side of the table. Always count!
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. On Friday, students are free from 12:00 to 3:00. Use rowspan
+       so that one "Free" cell covers Friday from 1:00 to 3:00 and
+       a new row from 3:00 to 5:00.
+    2. Make Monday's MTH 201 a four-hour class with rowspan="2".
+       Which cell must you delete?
+    3. Draw your own real timetable as a table.
+  -->
+
+</body>
+</html>

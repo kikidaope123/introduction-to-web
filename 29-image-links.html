@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+  LESSON 29: IMAGES YOU CAN CLICK
+  ===============================
+  You will learn:
+    * how to turn a picture into a link
+    * how to make small pictures that open big ones
+    * what the alt text of a clickable picture should say
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 29: Images you can click</title>
+</head>
+<body>
+
+  <h1>Images you can click</h1>
+
+  <!--
+    To make a picture clickable, put the <img> INSIDE an <a>.
+    The picture takes the place of the link text.
+
+        <a href="where to go">
+          <img src="the picture" alt="where the link goes">
+        </a>
+
+    The alt text is now the "text" of the link, so it should say
+    WHERE THE LINK GOES, not only what the picture shows.
+  -->
+  <h2>A logo that links to the list of lessons</h2>
+  <a href="index.html">
+    <img src="images/logo-tech-club.svg" alt="Go to the list of all lessons" width="80" height="80">
+  </a>
+
+  <!--
+    A SMALL GALLERY
+    Each small picture (a THUMBNAIL) is only about 6 KB, so the
+    page loads fast. A click opens the big picture, which is
+    about ten times larger. Visitors download a big picture only
+    if they really want to see it. This saves their data.
+  -->
+  <h2>Six famous places in Nigeria</h2>
+  <p>Click a small picture to see it large. Use the Back button to return.</p>
+
+  <p>
+    <a href="images/zuma-rock.jpg">
+      <img src="images/thumbs/zuma-rock.jpg" alt="Zuma Rock: open the large picture"
+           width="160" height="120">
+    </a>
+    <a href="images/olumo-rock.jpg">
+      <img src="images/thumbs/olumo-rock.jpg" alt="Olumo Rock: open the large picture"
+           width="160" height="120">
+    </a>
+    <a href="images/lekki-ikoyi-bridge.jpg">
+      <img src="images/thumbs/lekki-ikoyi-bridge.jpg" alt="Lekki-Ikoyi Link Bridge: open the large picture"
+           width="160" height="120">
+    </a>
+  </p>
+  <p>
+    <a href="images/national-theatre.jpg">
+      <img src="images/thumbs/national-theatre.jpg" alt="National Theatre, Lagos: open the large picture"
+           width="160" height="120">
+    </a>
+    <a href="images/erin-ijesha-waterfall.jpg">
+      <img src="images/thumbs/erin-ijesha-waterfall.jpg" alt="Erin Ijesha Waterfalls: open the large picture"
+           width="160" height="120">
+    </a>
+    <a href="images/idanre-hills.jpg">
+      <img src="images/thumbs/idanre-hills.jpg" alt="Idanre Hills: open the large picture"
+           width="160" height="120">
+    </a>
+  </p>
+
+  <!-- A picture AND words can share one link. -->
+  <h2>A picture and words in one link</h2>
+  <p>
+    <a href="https://en.wikipedia.org/wiki/Zuma_Rock">
+      <img src="images/thumbs/zuma-rock.jpg" alt="" width="80" height="60">
+      Read about Zuma Rock on Wikipedia
+    </a>
+  </p>
+  <!--
+    Why is the alt text EMPTY in the last link? Because the words
+    beside the picture already say where the link goes. The
+    picture adds nothing new, so it is a decoration (Lesson 28).
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add two more places to the gallery. Their thumbnails are in
+       images/thumbs  (for example aso-rock.jpg and obudu-mountain-resort.jpg).
+    2. Make the big pictures open in a new tab (Lesson 24).
+    3. Make the flag (images/nigeria-flag.svg) a link to the
+       Wikipedia page about Nigeria.
+  -->
+
+</body>
+</html>

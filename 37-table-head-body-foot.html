@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+  LESSON 37: THE THREE PARTS OF A TABLE
+  =====================================
+  You will learn:
+    * how to divide a table into <thead>, <tbody> and <tfoot>
+    * why this helps people, printers and CSS
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 37: The three parts of a table</title>
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 6px 12px;
+    }
+
+    /* Because the table has three named parts, CSS can give
+       each part its own colour. */
+    thead {
+      background-color: green;
+      color: white;
+    }
+    tfoot {
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The three parts of a table</h1>
+
+  <!--
+    A big table is easier to understand in three parts:
+
+        <thead>   the HEAD: the row (or rows) of column headers
+        <tbody>   the BODY: the rows of information
+        <tfoot>   the FOOT: totals or notes at the bottom
+
+    The rows (<tr>) now go inside these three parts.
+
+    WHY BOTHER?
+      * The code is clearer: you see at once where the data starts.
+      * CSS can style each part (look at the style rules above).
+      * When a long table is printed on several sheets of paper,
+        the browser can repeat the head on every sheet.
+  -->
+  <table>
+    <caption>Receipt from the campus bookshop</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price each</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Notebook (80 leaves)</td>
+        <td>4</td>
+        <td>₦500</td>
+        <td>₦2,000</td>
+      </tr>
+      <tr>
+        <td>Biro</td>
+        <td>10</td>
+        <td>₦100</td>
+        <td>₦1,000</td>
+      </tr>
+      <tr>
+        <td>Flash drive (32 GB)</td>
+        <td>1</td>
+        <td>₦6,500</td>
+        <td>₦6,500</td>
+      </tr>
+      <tr>
+        <td>Mathematical set</td>
+        <td>1</td>
+        <td>₦1,500</td>
+        <td>₦1,500</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th scope="row">Total</th>
+        <td></td>
+        <td></td>
+        <td>₦11,000</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!--
+    NOTICE the two empty cells in the foot. Every row must have
+    four cells, so we left two of them empty. It would be nicer
+    if "Total" could stretch across three columns. Lesson 38
+    shows you how.
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add one more item to the body. Work out the new total
+       and change the foot.
+    2. Change the background colour of the head.
+    3. Add a rule that gives the body (tbody) a light background.
+  -->
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+  LESSON 20: LINKS TO WEBSITES
+  ============================
+  You will learn:
+    * how to make a link with the <a> tag and the href attribute
+    * why a web address must start with https://
+    * how to write good link text
+  (You need the Internet to open the websites on this page.)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 20: Links to websites</title>
+</head>
+<body>
+
+  <h1>Links to websites</h1>
+
+  <!--
+    A LINK is made with the <a> tag. The "a" stands for ANCHOR.
+
+        <a href="https://www.wikipedia.org">Wikipedia</a>
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^
+           where the link goes              the words you click
+
+    href means "hypertext reference". It holds the address.
+    The browser shows a link in blue and underlines it.
+    After you visit the page, the link turns purple.
+  -->
+  <p><a href="https://www.wikipedia.org">Wikipedia</a></p>
+
+  <!-- A link can sit in the middle of a sentence. -->
+  <p>
+    The first website in the world is more than thirty years old, and it
+    is still online. You can <a href="https://info.cern.ch">visit the first website</a> today.
+  </p>
+
+  <!-- A list of links. Each link is inside a list item. -->
+  <h2>Useful websites for this course</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org">MDN Web Docs</a>: the best place to look up any tag</li>
+    <li><a href="https://www.freecodecamp.org">freeCodeCamp</a>: free coding lessons</li>
+    <li><a href="https://validator.w3.org">The W3C validator</a>: checks your HTML for mistakes</li>
+    <li><a href="https://www.w3schools.com">W3Schools</a>: short examples that you can try online</li>
+  </ul>
+
+  <!--
+    COMMON MISTAKE: forgetting https://
+        WRONG:  <a href="www.wikipedia.org">
+        RIGHT:  <a href="https://www.wikipedia.org">
+    Without https:// the browser thinks "www.wikipedia.org" is the
+    name of a FILE in your folder, and the link does not work.
+
+    GOOD LINK TEXT
+    The words of a link should say where the link goes.
+        BAD:   To read about HTML, <a ...>click here</a>.
+        GOOD:  Read <a ...>the MDN guide to HTML</a>.
+    Many blind users ask their screen reader to list all the links
+    on a page. A list of "click here, click here, click here" is useless.
+  -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add a link to the website of your university.
+    2. Add a link to your favourite news website inside a sentence.
+    3. Remove https:// from one address. Save, refresh and click it.
+       What does the browser say? Put it back afterwards.
+    4. Rewrite this bad link so that its text is good:
+       Click <a href="https://nimc.gov.ng">here</a> for NIN information.
+  -->
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+  LESSON 22: JUMPING AROUND INSIDE A PAGE
+  =======================================
+  You will learn:
+    * how to give a part of the page a name with the id attribute
+    * how to link straight to that part with the # sign
+    * how to make a table of contents and a "Back to top" link
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 22: Jumping around inside a page</title>
+</head>
+<body>
+
+  <!--
+    STEP 1: NAME THE PLACE with the id attribute.
+        <h2 id="north-west">North West</h2>
+
+    STEP 2: LINK TO THE PLACE with # and the same name.
+        <a href="#north-west">North West</a>
+
+    RULES FOR AN id
+      * Each id may be used only ONCE on a page. It must be unique.
+      * No spaces. Use a hyphen:  north-west   not   north west
+      * Capital letters count:  "Top" and "top" are different.
+  -->
+  <h1 id="top">The six geopolitical zones of Nigeria</h1>
+
+  <p>Nigeria has 36 states. They are grouped into six zones.</p>
+
+  <!-- A TABLE OF CONTENTS: every link jumps to a heading further down. -->
+  <h2>Contents</h2>
+  <ul>
+    <li><a href="#north-central">North Central</a></li>
+    <li><a href="#north-east">North East</a></li>
+    <li><a href="#north-west">North West</a></li>
+    <li><a href="#south-east">South East</a></li>
+    <li><a href="#south-south">South South</a></li>
+    <li><a href="#south-west">South West</a></li>
+  </ul>
+
+  <hr>
+
+  <h2 id="north-central">North Central</h2>
+  <p>This zone is often called the Middle Belt. The Federal Capital Territory, Abuja, is here.</p>
+  <ul>
+    <li>Benue</li>
+    <li>Kogi</li>
+    <li>Kwara</li>
+    <li>Nasarawa</li>
+    <li>Niger</li>
+    <li>Plateau</li>
+  </ul>
+  <!-- This link jumps back to the element with id="top". -->
+  <p><a href="#top">Back to top</a></p>
+
+  <h2 id="north-east">North East</h2>
+  <p>Yankari Game Reserve, in Bauchi State, is in this zone.</p>
+  <ul>
+    <li>Adamawa</li>
+    <li>Bauchi</li>
+    <li>Borno</li>
+    <li>Gombe</li>
+    <li>Taraba</li>
+    <li>Yobe</li>
+  </ul>
+  <p><a href="#top">Back to top</a></p>
+
+  <h2 id="north-west">North West</h2>
+  <p>This zone has seven states, more than any other zone.</p>
+  <ul>
+    <li>Jigawa</li>
+    <li>Kaduna</li>
+    <li>Kano</li>
+    <li>Katsina</li>
+    <li>Kebbi</li>
+    <li>Sokoto</li>
+    <li>Zamfara</li>
+  </ul>
+  <p><a href="#top">Back to top</a></p>
+
+  <h2 id="south-east">South East</h2>
+  <p>This zone has five states, fewer than any other zone.</p>
+  <ul>
+    <li>Abia</li>
+    <li>Anambra</li>
+    <li>Ebonyi</li>
+    <li>Enugu</li>
+    <li>Imo</li>
+  </ul>
+  <p><a href="#top">Back to top</a></p>
+
+  <h2 id="south-south">South South</h2>
+  <p>Most of Nigeria's oil comes from this zone, in the Niger Delta.</p>
+  <ul>
+    <li>Akwa Ibom</li>
+    <li>Bayelsa</li>
+    <li>Cross River</li>
+    <li>Delta</li>
+    <li>Edo</li>
+    <li>Rivers</li>
+  </ul>
+  <p><a href="#top">Back to top</a></p>
+
+  <h2 id="south-west">South West</h2>
+  <p>Lagos, the largest city in Nigeria, is in this zone.</p>
+  <ul>
+    <li>Ekiti</li>
+    <li>Lagos</li>
+    <li>Ogun</li>
+    <li>Ondo</li>
+    <li>Osun</li>
+    <li>Oyo</li>
+  </ul>
+  <p><a href="#top">Back to top</a></p>
+
+  <!--
+    ONE MORE TRICK
+    You can jump to a named place on ANOTHER page: write the file
+    name, then # and the id.
+        <a href="pages/about.html#team">Meet the team</a>
+  -->
+
+  <!-- LESSON LINKS: the previous lesson, the list of all lessons, the next lesson. -->
+  <hr>
+  <p>
+    <a href="21-links-to-other-pages.html">&larr; Previous lesson</a> |
+    <a href="index.html">All lessons</a> |
+    <a href="23-links-email-phone-whatsapp.html">Next lesson &rarr;</a>
+  </p>
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Click a link in the Contents and look at the address bar.
+       What has been added to the end of the address?
+    2. Add a new section at the bottom called "The capital" with
+       id="capital", and add it to the Contents.
+    3. Give two headings the SAME id. Which one does the link
+       jump to? (This is why an id must be unique.)
+  -->
+
+</body>
+</html>

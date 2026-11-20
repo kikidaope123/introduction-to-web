@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+  LESSON 14: SPECIAL CHARACTERS
+  =============================
+  You will learn:
+    * what an entity is, and the four entities you must know
+    * how to type symbols such as the naira and copyright signs
+    * how to add emoji to a page
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 14: Special characters</title>
+</head>
+<body>
+
+  <h1>Special characters</h1>
+
+  <!--
+    WHAT IS AN ENTITY?
+    An entity is a short code for one character.
+    It starts with an ampersand (&) and ends with a semicolon (;).
+
+    THE FOUR YOU MUST KNOW
+    The characters < > & have a special job in HTML, so when you
+    want to SHOW them on the page you must write their entities.
+  -->
+  <h2>The four you must know</h2>
+  <p>
+    &amp;lt; shows the less-than sign: &lt;<br>
+    &amp;gt; shows the greater-than sign: &gt;<br>
+    &amp;amp; shows the ampersand: &amp;<br>
+    &amp;quot; shows a double quotation mark: &quot;
+  </p>
+
+  <p>In maths, 3 &lt; 5 and 9 &gt; 7.</p>
+  <p>My favourite shop is Bola &amp; Sons.</p>
+
+  <!--
+    &nbsp; is a NON-BREAKING SPACE. It is a space that the browser
+    will never break at the end of a line. It keeps a number and
+    its unit together: in the code below, "300" and "km" will
+    always stay on the same line.
+  -->
+  <h2>A space that does not break</h2>
+  <p>The distance from Lagos to Benin City is about 300&nbsp;km.</p>
+
+  <!--
+    SYMBOLS
+    Some symbols have a name (&copy;). Every symbol also has a
+    number: the naira sign is number 8358, so we can write &#8358;
+    Because this page uses UTF-8, you can also simply type or
+    paste the symbol itself: ₦
+  -->
+  <h2>Useful symbols</h2>
+  <p>
+    &copy; copyright (&amp;copy;)<br>
+    &reg; registered trade mark (&amp;reg;)<br>
+    &#8358; naira (&amp;#8358;)<br>
+    &deg; degree, as in 32&deg;C (&amp;deg;)<br>
+    &times; multiply, as in 4 &times; 5 (&amp;times;)<br>
+    &divide; divide, as in 20 &divide; 4 (&amp;divide;)<br>
+    &frac12; one half (&amp;frac12;)<br>
+    &larr; &rarr; arrows (&amp;larr; and &amp;rarr;)<br>
+    &check; tick (&amp;check;)
+  </p>
+
+  <p>&copy; 2026 Ada Okafor. A plate of jollof rice costs &#8358;1,500.</p>
+
+  <!--
+    EMOJI
+    Emoji are characters too. On Windows, press the Windows key and
+    the full stop (.) together to open the emoji keyboard, then
+    click an emoji to type it into your code.
+  -->
+  <h2>Emoji</h2>
+  <p>I love coding 💻 and jollof rice 🍛. Well done! 🎉</p>
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Write this sentence so that it shows correctly on the page:
+       If a < b and b < c, then a < c.
+    2. Write a copyright line with your own name and this year.
+    3. Write the price of three things you bought this week,
+       using the naira sign.
+    4. Add two emoji to a sentence about your day.
+  -->
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+  LESSON 26: THE SIZE OF AN IMAGE
+  ===============================
+  You will learn:
+    * how to set the size of a picture with width and height
+    * how to avoid stretching a picture out of shape
+    * why a small file matters more than a small picture
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 26: The size of an image</title>
+</head>
+<body>
+
+  <h1>The size of an image</h1>
+
+  <!--
+    Every picture file has a real size, measured in PIXELS
+    (the tiny dots of the screen). The file zuma-rock.jpg is
+    640 pixels wide and 480 pixels high.
+
+    The width and height attributes tell the browser how big to
+    draw the picture. Write the numbers only, with no "px".
+  -->
+  <h2>1. The real size: 640 by 480</h2>
+  <img src="images/zuma-rock.jpg" alt="Zuma Rock, a huge grey rock above green bush"
+       width="640" height="480">
+
+  <!-- Half as wide and half as high: the shape stays the same. -->
+  <h2>2. Half size: 320 by 240</h2>
+  <img src="images/zuma-rock.jpg" alt="Zuma Rock, a huge grey rock above green bush"
+       width="320" height="240">
+
+  <!--
+    Give ONLY the width, and the browser works out the height
+    by itself. The picture keeps its shape.
+  -->
+  <h2>3. Only the width: the browser works out the height</h2>
+  <img src="images/zuma-rock.jpg" alt="Zuma Rock, a huge grey rock above green bush"
+       width="200">
+
+  <!--
+    WRONG! These numbers do not match the shape of the picture,
+    so the rock is squashed flat.
+  -->
+  <h2>4. The wrong shape: do not do this</h2>
+  <img src="images/zuma-rock.jpg" alt="Zuma Rock, squashed flat because the size is wrong"
+       width="400" height="120">
+
+  <!--
+    HOW TO KEEP THE SHAPE
+      Multiply or divide the width AND the height by the same number.
+          640 x 480   divided by 2   =   320 x 240
+          640 x 480   divided by 4   =   160 x 120
+
+    GOOD HABITS
+      * Always write both width and height. The browser can then
+        keep an empty space of the right size while the picture
+        loads, and the text does not jump around.
+      * Do not make a picture BIGGER than its real size.
+        It becomes blurred.
+      * width and height change how big the picture LOOKS. They do
+        not change the FILE. A 5 MB photo from your phone is still
+        a 5 MB download, even if you show it small. Make the file
+        itself smaller first (Paint and many free websites can do it).
+        Your visitors pay for data!
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Show the picture at one quarter of its real size.
+    2. Show it 1280 pixels wide. Is it still sharp?
+    3. Find the size of images/tim-berners-lee.jpg (right-click the
+       file, then choose Properties and Details). Show it at half size.
+  -->
+
+</body>
+</html>

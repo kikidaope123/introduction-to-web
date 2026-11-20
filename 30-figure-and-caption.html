@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+  LESSON 30: PICTURES WITH CAPTIONS
+  =================================
+  You will learn:
+    * how to join a picture and its caption with <figure> and <figcaption>
+    * the difference between alt text and a caption
+    * which pictures you are allowed to use, and how to give credit
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 30: Pictures with captions</title>
+</head>
+<body>
+
+  <h1>Pictures with captions</h1>
+
+  <!--
+    <figure>      a picture (or a chart, a table, some code)
+                  together with its caption
+    <figcaption>  the caption: the words under the picture
+
+    ALT TEXT OR CAPTION? You need both, and they are different.
+        alt       REPLACES the picture for people who cannot see it.
+        caption   ADDS information for everybody: who, where, when.
+  -->
+  <figure>
+    <img src="images/tim-berners-lee.jpg"
+         alt="Portrait of Tim Berners-Lee, a smiling man in a blue shirt and tie"
+         width="240" height="300">
+    <figcaption>
+      Sir Tim Berners-Lee invented the World Wide Web in 1989.
+      <small>Photo: Paul Clarke, CC BY-SA 4.0.</small>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/first-web-server.jpg"
+         alt="An old black computer with a keyboard and an open book in front of it"
+         width="320" height="240">
+    <figcaption>
+      The first web server in the world: a NeXT computer at CERN, in Switzerland.
+      The label on it says: do not power it down!
+      <small>Photo: Coolcaesar, CC BY-SA 3.0.</small>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/zuma-rock.jpg"
+         alt="Zuma Rock, a huge grey rock rising above green bush"
+         width="320" height="240">
+    <figcaption>
+      Zuma Rock stands beside the road from Abuja to Kaduna.
+      <small>Photo: Jeff Attaway, CC BY 2.0.</small>
+    </figcaption>
+  </figure>
+
+  <!--
+    WHOSE PICTURE IS IT?
+    A picture belongs to the person who made it. You may NOT copy
+    any picture you find on Google and put it on your website.
+
+    PICTURES YOU MAY USE
+      1. Pictures you took or drew yourself.
+      2. Pictures with a FREE LICENCE, such as Creative Commons (CC).
+         Find them on Wikimedia Commons, Unsplash or Pexels.
+
+    WHAT DOES "CC BY-SA" MEAN?
+      BY   you must say who made the picture (give credit)
+      SA   if you change it, you must share your version
+           under the same licence ("share alike")
+
+    All the photos in these lessons come from Wikimedia Commons.
+    The page credits.html names the photographer of every one.
+  -->
+  <p>See the <a href="credits.html">credits for all the pictures</a> in these lessons.</p>
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Make a figure for images/university-gate.jpg with a caption.
+       Find the name of the photographer in credits.html
+    2. Take a photo with your phone, copy it into the  images
+       folder, and make a figure with the caption "Photo: (your name)".
+    3. Read the alt text and the caption of the first figure again.
+       Explain to a classmate why they are different.
+  -->
+
+</body>
+</html>

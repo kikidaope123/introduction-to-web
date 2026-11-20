@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+  LESSON 21: LINKS BETWEEN YOUR OWN PAGES
+  =======================================
+  You will learn:
+    * how to link to another file in the same folder
+    * how to link into a folder, and back out of it with ../
+    * why we never use an address that starts with C:\
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 21: Links between your own pages</title>
+</head>
+<body>
+
+  <h1>Links between your own pages</h1>
+
+  <!--
+    A website is a FOLDER of files that link to each other.
+    This is part of the folder you are working in:
+
+        html scripts/
+            index.html                      the list of all lessons
+            20-links.html
+            21-links-to-other-pages.html    <== YOU ARE HERE
+            pages/
+                about.html
+                contact.html
+
+    To link to your own file, you do not need https://
+    You only write the PATH: the way from THIS file to THAT file.
+    This kind of address is called a RELATIVE address.
+  -->
+
+  <!-- 1. A file in the SAME folder: write only its name. -->
+  <h2>1. A file in the same folder</h2>
+  <p><a href="20-links.html">Go to Lesson 20</a></p>
+
+  <!--
+    2. A file INSIDE a folder: write the folder name, a forward
+       slash (/), then the file name.
+  -->
+  <h2>2. A file inside a folder</h2>
+  <ul>
+    <li><a href="pages/about.html">The About page</a></li>
+    <li><a href="pages/contact.html">The Contact page</a></li>
+  </ul>
+
+  <!--
+    3. Going BACK OUT of a folder: two dots (..) mean
+       "go up to the folder above".
+       Open pages/about.html in your editor and look at its links:
+           href="../21-links-to-other-pages.html"   up, then this file
+           href="contact.html"                      same folder as about.html
+  -->
+  <h2>3. Coming back out of a folder</h2>
+  <p>Open the About page and click its link to come back here.</p>
+
+  <!--
+    COMMON MISTAKES
+      * Using a backslash:    pages\about.html     Use /  always.
+      * Wrong capital letter: Pages/About.html     On most web servers
+        "About.html" and "about.html" are two DIFFERENT files.
+      * A full computer path: C:\Users\Ada\Desktop\pages\about.html
+        This works only on YOUR computer. Nobody else has that folder.
+
+    GOOD HABITS
+      * Name files in lowercase, with hyphens and no spaces:
+        about-me.html, not About Me.html
+      * The first page of a website is always called index.html
+  -->
+
+  <!--
+    LESSON LINKS
+    From now on, every lesson ends with three links like these.
+    They are ordinary relative links, like the ones above.
+  -->
+  <hr>
+  <p>
+    <a href="20-links.html">&larr; Previous lesson</a> |
+    <a href="index.html">All lessons</a> |
+    <a href="22-links-inside-a-page.html">Next lesson &rarr;</a>
+  </p>
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add a link from this page to Lesson 19.
+    2. Make a new file called  news.html  inside the  pages  folder.
+       Link to it from this page, and link from it back to this page.
+    3. In pages/about.html, add a link that goes to Lesson 01.
+       (Remember: you must go up one folder first.)
+  -->
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+  LESSON 35: YOUR FIRST TABLE
+  ===========================
+  You will learn:
+    * how to build a table with <table>, <tr> and <td>
+    * that a table is written row by row
+    * what tables are for, and what they are NOT for
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 35: Your first table</title>
+
+  <style>
+    /* A little CSS (Lesson 34) to draw the lines of the table.
+       Without these rules, a table has no lines at all. */
+    table, td {
+      border: 1px solid black;
+      border-collapse: collapse;   /* join double lines into single lines */
+    }
+    td {
+      padding: 6px 12px;           /* some empty space inside every cell */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Your first table</h1>
+
+  <!--
+    THREE TAGS MAKE A TABLE
+        <table>   the whole table
+        <tr>      a Table Row
+        <td>      a Table Data cell: one box in the row
+
+    We write a table ROW BY ROW. Inside each row we write its
+    cells from left to right. There is no tag for a column:
+    the first cells of all the rows make the first column.
+  -->
+  <h2>Canteen price list</h2>
+  <table>
+    <tr>
+      <td>Jollof rice</td>
+      <td>₦1,500</td>
+    </tr>
+    <tr>
+      <td>Pounded yam and egusi soup</td>
+      <td>₦2,000</td>
+    </tr>
+    <tr>
+      <td>Moin moin</td>
+      <td>₦400</td>
+    </tr>
+    <tr>
+      <td>Bottle of water</td>
+      <td>₦200</td>
+    </tr>
+  </table>
+
+  <!-- A table with three cells in every row, so it has three columns. -->
+  <h2>Some states of Nigeria</h2>
+  <table>
+    <tr>
+      <td>Lagos</td>
+      <td>Ikeja</td>
+      <td>South West</td>
+    </tr>
+    <tr>
+      <td>Kano</td>
+      <td>Kano</td>
+      <td>North West</td>
+    </tr>
+    <tr>
+      <td>Enugu</td>
+      <td>Enugu</td>
+      <td>South East</td>
+    </tr>
+  </table>
+
+  <!--
+    QUESTION: in the second table, what does each column mean?
+    You have to guess! A good table needs HEADINGS for its
+    columns. That is the next lesson.
+
+    RULES
+      * A <td> must be inside a <tr>. A <tr> must be inside a <table>.
+      * Every row should have the same number of cells.
+
+    WHAT ARE TABLES FOR?
+      Use a table for information that has rows AND columns:
+      price lists, timetables, results, league tables.
+      Do NOT use a table to arrange the parts of a whole page.
+      People did that in the 1990s. Today CSS does the layout.
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add a new row to the price list for your favourite snack.
+    2. Add a third cell to every row of the price list that says
+       whether the food is "Hot" or "Cold".
+    3. Delete one <td> from a single row. Save and refresh.
+       What does the table look like now?
+  -->
+
+</body>
+</html>

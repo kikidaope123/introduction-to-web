@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+  LESSON 16: NUMBERED LISTS
+  =========================
+  You will learn:
+    * how to make a numbered list with <ol> and <li>
+    * how to number with letters or Roman numerals (type)
+    * how to start at another number (start) or count down (reversed)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 16: Numbered lists</title>
+</head>
+<body>
+
+  <h1>Numbered lists</h1>
+
+  <!--
+    <ol> means ORDERED LIST: a list where the order matters.
+    The browser numbers the items for you. If you add or remove
+    an item, the numbers change by themselves.
+  -->
+  <h2>How to make a web page</h2>
+  <ol>
+    <li>Open your code editor.</li>
+    <li>Type the HTML skeleton.</li>
+    <li>Add your content inside the body.</li>
+    <li>Save the file with a name that ends in .html</li>
+    <li>Double-click the file to open it in the browser.</li>
+  </ol>
+
+  <!--
+    The type attribute changes the kind of numbering:
+        type="1"   1, 2, 3     (this is the normal one)
+        type="A"   A, B, C
+        type="a"   a, b, c
+        type="I"   I, II, III  (Roman numerals)
+        type="i"   i, ii, iii
+  -->
+  <h2>What does HTML stand for?</h2>
+  <ol type="A">
+    <li>High Tech Modern Language</li>
+    <li>HyperText Markup Language</li>
+    <li>Home Tool Making Language</li>
+    <li>Hyperlinks and Text Management Language</li>
+  </ol>
+
+  <h2>Rules of the computer laboratory</h2>
+  <ol type="i">
+    <li>No food or drinks near the computers.</li>
+    <li>Save your work every few minutes.</li>
+    <li>Shut down the computer before you leave.</li>
+  </ol>
+
+  <!-- The start attribute says which number to begin with. -->
+  <h2>Topics for weeks 5 to 7</h2>
+  <ol start="5">
+    <li>Forms and style sheets</li>
+    <li>Tools and frameworks</li>
+    <li>Web standards</li>
+  </ol>
+
+  <!-- reversed makes the list count DOWN. It has no value, like hidden. -->
+  <h2>The three largest cities in Nigeria (counting down)</h2>
+  <ol reversed>
+    <li>Ibadan</li>
+    <li>Kano</li>
+    <li>Lagos</li>
+  </ol>
+
+  <!--
+    UL OR OL?
+      Does the order matter? (steps, ranks, instructions)   use <ol>
+      The order does not matter? (shopping, hobbies)        use <ul>
+  -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Write the steps for cooking your favourite meal as an <ol>.
+    2. Add a new step in the MIDDLE of the first list. Save and
+       refresh: the browser fixes all the numbers for you.
+    3. Write a multiple-choice question with options a, b, c and d.
+    4. Make a "Top 5" list that counts down from 5 to 1.
+  -->
+
+</body>
+</html>

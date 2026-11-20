@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+  LESSON 09: LINE BREAKS AND DIVIDING LINES
+  =========================================
+  You will learn:
+    * how to start a new line with <br>
+    * how to draw a line across the page with <hr>
+    * when you should NOT use <br>
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 09: Line breaks and dividing lines</title>
+</head>
+<body>
+
+  <h1>Line breaks and dividing lines</h1>
+
+  <!--
+    <br> means "break the line here". It is an EMPTY element:
+    it has no content and no closing tag.
+    Use it where the line breaks are part of the meaning,
+    for example in a poem or in an address.
+  -->
+  <h2>The National Pledge</h2>
+  <p>
+    I pledge to Nigeria my country<br>
+    To be faithful, loyal and honest<br>
+    To serve Nigeria with all my strength<br>
+    To defend her unity<br>
+    And uphold her honour and glory<br>
+    So help me God.
+  </p>
+
+  <!--
+    <hr> draws a horizontal line (a "horizontal rule").
+    It tells the reader: "a new topic starts here".
+    Like <br>, it is an empty element with no closing tag.
+  -->
+  <hr>
+
+  <h2>A postal address</h2>
+  <p>
+    Ada Okafor<br>
+    Department of Information Technology<br>
+    P.M.B. 1234<br>
+    Enugu, Enugu State
+  </p>
+
+  <hr>
+
+  <h2>Without line breaks</h2>
+  <!-- The same address with no <br>: the browser joins all the lines. -->
+  <p>
+    Ada Okafor
+    Department of Information Technology
+    P.M.B. 1234
+    Enugu, Enugu State
+  </p>
+
+  <!--
+    GOOD HABITS
+      * Do NOT use <br> to separate paragraphs. Use two <p> elements.
+      * Do NOT use many <br> tags to push things down the page.
+        Spacing is the job of CSS (you will learn it later).
+      * Use <hr> only when the topic really changes.
+  -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Write your own address using <br>.
+    2. Write a short poem or the words of a song you like, line by line.
+    3. Put an <hr> between your address and your poem.
+  -->
+
+</body>
+</html>

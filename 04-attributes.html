@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+  LESSON 04: ATTRIBUTES
+  =====================
+  You will learn:
+    * what an attribute is and where to write it
+    * the title, lang and hidden attributes
+    * how to put more than one attribute in a tag
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 04: Attributes</title>
+</head>
+<body>
+
+  <h1>Attributes</h1>
+
+  <!--
+    WHAT IS AN ATTRIBUTE?
+    An attribute gives a tag some extra information.
+    It is written INSIDE the OPENING tag, like this:
+
+        <p title="Hello">
+           ^^^^^ ^^^^^^^
+           name   value
+
+    RULES
+      * The attribute goes in the opening tag, never in the closing tag.
+      * Put a space between the tag name and the attribute.
+      * Write the name, an equals sign, then the value in "double quotes".
+  -->
+
+  <!-- title: shows a small note when the mouse rests on the element. -->
+  <p title="Abuja became the capital on 12 December 1991.">
+    The capital of Nigeria is Abuja. (Rest your mouse on this sentence and wait.)
+  </p>
+
+  <!-- lang: says which language the text is in. "ig" is the code for Igbo. -->
+  <p lang="ig">Nnọọ!</p>
+
+  <!-- One tag can have several attributes. Put a space between them. -->
+  <p lang="ha" title="This is Hausa. It means: thank you.">Na gode.</p>
+
+  <!--
+    hidden: hides the element. Notice that hidden has NO value.
+    For a few attributes, writing the name alone is enough to switch it on.
+  -->
+  <p hidden>You cannot see this paragraph in the browser.</p>
+
+  <p>There is a hidden paragraph just above this one. Find it in the code.</p>
+
+  <!--
+    You have already used attributes without knowing it:
+        <html lang="en">           the lang attribute
+        <meta charset="UTF-8">     the charset attribute
+
+    GOOD HABITS
+      * Always put quotes around the value.
+      * Write attribute names in lowercase.
+      * Phones have no mouse, so they do not show the title note.
+        Never put important information ONLY in a title.
+  -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Change the words of the first note. Save, refresh, and test it.
+    2. Add a title attribute to the <h1> heading.
+    3. Delete the word  hidden  from the hidden paragraph. What happens?
+    4. Add a paragraph in Yoruba. Its language code is "yo":
+       <p lang="yo">Ẹ ṣé</p>
+  -->
+
+</body>
+</html>

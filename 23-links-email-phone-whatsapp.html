@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  LESSON 23: EMAIL, PHONE AND WHATSAPP LINKS
+  ==========================================
+  You will learn:
+    * mailto: links that start an email
+    * tel: links that start a phone call
+    * a link that opens a WhatsApp chat
+  (The numbers on this page are not real. Use your own to test.)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 23: Email, phone and WhatsApp links</title>
+</head>
+<body>
+
+  <h1>Email, phone and WhatsApp links</h1>
+
+  <p>A link does not always open a page. It can also start an email, a call or a chat.</p>
+
+  <!--
+    EMAIL: the address in href starts with  mailto:
+    A click opens the email program with the address already filled in.
+  -->
+  <h2>Email</h2>
+  <p>Send an email to <a href="mailto:ada@example.com">ada@example.com</a></p>
+
+  <!--
+    You can fill in the SUBJECT line too. Add  ?subject=  and the
+    words. A space is not allowed in an address, so each space is
+    written as %20.
+  -->
+  <p>
+    <a href="mailto:ada@example.com?subject=Question%20about%20IFT%20203">
+      Email Ada with a question about IFT 203
+    </a>
+  </p>
+
+  <!--
+    PHONE: the address starts with  tel:
+    On a phone, a tap on the link starts a call.
+    Write the number in the international way, with no spaces:
+        +234 is the code for Nigeria, then the number WITHOUT its first 0.
+        0800 000 0000   becomes   +2348000000000
+  -->
+  <h2>Phone</h2>
+  <p>Call the department: <a href="tel:+2348000000000">0800 000 0000</a></p>
+
+  <!-- SMS: the address starts with  sms:  and opens the messages app. -->
+  <p>Send a text message: <a href="sms:+2348000000000">0800 000 0000</a></p>
+
+  <!--
+    WHATSAPP: the address is  https://wa.me/  followed by the number
+    in the international way, but with NO plus sign.
+    You can add a ready-made message with  ?text=
+  -->
+  <h2>WhatsApp</h2>
+  <p><a href="https://wa.me/2348000000000">Chat with us on WhatsApp</a></p>
+  <p>
+    <a href="https://wa.me/2348000000000?text=Hello%2C%20I%20want%20to%20join%20the%20Tech%20Club">
+      Ask to join the Tech Club on WhatsApp
+    </a>
+  </p>
+
+  <!--
+    GOOD HABITS
+      * Show the email address or the number in the link text, so
+        that people can read it and write it down.
+      * Test tel: and WhatsApp links on a phone. A laptop may do nothing.
+      * Think before you publish your own number or email on the Web.
+        Everybody in the world can see it, including spammers.
+  -->
+
+  <!-- LESSON LINKS: the previous lesson, the list of all lessons, the next lesson. -->
+  <hr>
+  <p>
+    <a href="22-links-inside-a-page.html">&larr; Previous lesson</a> |
+    <a href="index.html">All lessons</a> |
+    <a href="24-links-new-tab-and-download.html">Next lesson &rarr;</a>
+  </p>
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Change the email link so that it sends an email to YOU,
+       with the subject "Hello from my web page".
+    2. Make a WhatsApp link with your own number. Send the file to
+       your phone and test the link.
+    3. Make a small "Contact me" list with three items:
+       an email link, a phone link and a WhatsApp link.
+  -->
+
+</body>
+</html>

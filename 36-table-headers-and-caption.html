@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+  LESSON 36: HEADER CELLS AND A CAPTION
+  =====================================
+  You will learn:
+    * how to label columns and rows with <th>
+    * how to say what a header belongs to with the scope attribute
+    * how to give a table a title with <caption>
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 36: Header cells and a caption</title>
+
+  <style>
+    /* The same small CSS as Lesson 35, now for th cells as well. */
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 6px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Header cells and a caption</h1>
+
+  <!--
+    <th> is a Table Header cell. It labels a column or a row.
+    The browser shows it in bold and puts it in the centre.
+
+    scope="col" says: "this header is for the COLUMN below me".
+    scope="row" says: "this header is for the ROW beside me".
+    A screen reader uses scope to read a table properly:
+    "Capital: Ikeja. Slogan: Centre of Excellence."
+
+    <caption> is the title of the table. It must be the FIRST
+    thing inside <table>.
+  -->
+  <table>
+    <caption>Some states of Nigeria</caption>
+    <tr>
+      <th scope="col">State</th>
+      <th scope="col">Capital</th>
+      <th scope="col">Slogan</th>
+    </tr>
+    <tr>
+      <td>Lagos</td>
+      <td>Ikeja</td>
+      <td>Centre of Excellence</td>
+    </tr>
+    <tr>
+      <td>Kano</td>
+      <td>Kano</td>
+      <td>Centre of Commerce</td>
+    </tr>
+    <tr>
+      <td>Enugu</td>
+      <td>Enugu</td>
+      <td>Coal City State</td>
+    </tr>
+    <tr>
+      <td>Benue</td>
+      <td>Makurdi</td>
+      <td>Food Basket of the Nation</td>
+    </tr>
+    <tr>
+      <td>Kogi</td>
+      <td>Lokoja</td>
+      <td>The Confluence State</td>
+    </tr>
+  </table>
+
+  <!--
+    HEADERS FOR ROWS AS WELL
+    In this table the first cell of every row is a header too:
+    it holds the name of the student. So it is a <th scope="row">.
+  -->
+  <h2>A table with row headers</h2>
+  <table>
+    <caption>Test scores out of 20</caption>
+    <tr>
+      <th scope="col">Student</th>
+      <th scope="col">Test 1</th>
+      <th scope="col">Test 2</th>
+    </tr>
+    <tr>
+      <th scope="row">Ada Okafor</th>
+      <td>17</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th scope="row">Tunde Bakare</th>
+      <td>14</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th scope="row">Amina Bello</th>
+      <td>18</td>
+      <td>15</td>
+    </tr>
+  </table>
+
+  <!--
+    GOOD HABITS
+      * Every table of information needs header cells.
+      * Do not fake a header with <td><b>State</b></td>.
+        It looks the same, but it does not MEAN "header".
+      * Give every table a caption, so readers know what it shows.
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add your own state to the first table, with its capital and slogan.
+    2. Add a "Test 3" column to the second table.
+    3. Add yourself as a new row in the second table.
+  -->
+
+</body>
+</html>

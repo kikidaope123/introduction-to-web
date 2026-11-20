@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+  LESSON 28: WRITING GOOD ALT TEXT
+  ================================
+  You will learn:
+    * how to describe a picture well in a few words
+    * what bad alt text looks like
+    * when the alt text should be empty
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 28: Writing good alt text</title>
+</head>
+<body>
+
+  <h1>Writing good alt text</h1>
+
+  <!--
+    THE TELEPHONE TEST
+    Imagine you are reading your page to a friend on the phone.
+    When you reach a picture, what would you say about it?
+    THAT is your alt text.
+  -->
+
+  <!--
+    GOOD: it says what the picture shows, in one short sentence.
+  -->
+  <h2>1. Good alt text</h2>
+  <img src="images/durbar-festival.jpg"
+       alt="Horsemen in colourful robes riding at the Durbar festival in Kano"
+       width="320" height="240">
+
+  <!--
+    BAD: these three say nothing useful. A blind visitor learns
+    nothing about the picture.
+        alt="image"
+        alt="durbar-festival.jpg"
+        alt="photo123"
+    Also, do not begin with "Picture of" or "Image of". The screen
+    reader already says "image" before it reads your words.
+  -->
+  <h2>2. Bad alt text (look at the code)</h2>
+  <img src="images/durbar-festival.jpg" alt="image" width="320" height="240">
+
+  <!--
+    TOO LONG: alt text is not an essay. Keep it to one sentence.
+    If the picture needs a long explanation, write it in a normal
+    paragraph near the picture, where everybody can read it.
+  -->
+
+  <!--
+    EMPTY ALT: a picture that is ONLY decoration tells the reader
+    nothing new. Give it an EMPTY alt: two quotation marks with
+    nothing between them. The screen reader then skips the picture.
+
+    Be careful: empty alt (alt="") is correct for decoration.
+    A MISSING alt attribute is always a mistake.
+  -->
+  <h2>3. A decoration has empty alt text</h2>
+  <p>
+    <img src="images/nigeria-flag.svg" alt="" width="40" height="20">
+    Welcome to our page about Nigerian festivals.
+  </p>
+
+  <!--
+    A PICTURE OF WORDS: when the picture contains words, the alt
+    text should repeat those words.
+  -->
+  <h2>4. A picture with words in it</h2>
+  <img src="images/abuja-city-gate.jpg"
+       alt="The white Abuja City Gate. The words on it say: You are welcome."
+       width="320" height="240">
+
+  <!--
+    QUICK GUIDE
+        The picture gives information      describe it in one sentence
+        The picture is only decoration     alt=""
+        The picture contains words         repeat the words
+        The picture is a link              say where the link goes
+                                           (see Lesson 29)
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Repair the bad alt text in part 2.
+    2. Write alt text for these three pictures and show them:
+       images/danfo-buses.jpg, images/yankari-elephant.jpg
+       and images/lecture-hall.jpg
+    3. Swap pages with a classmate. Close your eyes while they read
+       your alt text to you. Can you imagine each picture?
+  -->
+
+</body>
+</html>

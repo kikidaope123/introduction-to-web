@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+  LESSON 13: CODE AND FIXED-LAYOUT TEXT
+  =====================================
+  You will learn:
+    * <pre> to keep your spaces and new lines exactly as typed
+    * <code> to show computer code, and <kbd> to show keys
+    * how to show a tag on the page without the browser obeying it
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 13: Code and fixed-layout text</title>
+</head>
+<body>
+
+  <h1>Code and fixed-layout text</h1>
+
+  <!--
+    <pre> means PREFORMATTED. Inside it, the browser keeps every
+    space and every new line. It also uses a "typewriter" font in
+    which every letter has the same width, so columns line up.
+
+    NOTE: inside <pre> we do NOT indent the code, because every
+    space we type would appear on the page.
+  -->
+  <h2>A price list</h2>
+<pre>
+ITEM               PRICE
+Meat pie           ₦500
+Jollof rice        ₦1,500
+Bottle of water    ₦200
+</pre>
+
+  <!-- <kbd> shows keys that the reader should press on the keyboard. -->
+  <h2>Keyboard keys</h2>
+  <p>To save your work, press <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+  <p>To refresh the browser, press <kbd>F5</kbd>.</p>
+
+  <!--
+    <code> shows a piece of computer code inside a sentence.
+
+    PROBLEM: if we type a real tag such as <p> in the text, the
+    browser OBEYS it. It does not SHOW it.
+    SOLUTION: type  &lt;  for the sign <   (lt = "less than")
+              type  &gt;  for the sign >   (gt = "greater than")
+    These codes are called ENTITIES. Lesson 14 has many more.
+  -->
+  <h2>Code inside a sentence</h2>
+  <p>A paragraph starts with <code>&lt;p&gt;</code> and ends with <code>&lt;/p&gt;</code>.</p>
+
+  <!--
+    For several lines of code, put <code> inside <pre>.
+    Now the spaces and the new lines are kept as well.
+  -->
+  <h2>Several lines of code</h2>
+<pre><code>&lt;h1&gt;Hello, Nigeria!&lt;/h1&gt;
+&lt;p&gt;This is my first page.&lt;/p&gt;</code></pre>
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add two more items to the price list. Keep the columns straight.
+    2. Write a sentence that tells the reader to press Ctrl + U.
+    3. Show the code for a level 2 heading on the page, using
+       <code> with &lt; and &gt;.
+  -->
+
+</body>
+</html>

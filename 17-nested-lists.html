@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+  LESSON 17: LISTS INSIDE LISTS
+  =============================
+  You will learn:
+    * how to put one list inside another (a nested list)
+    * exactly where the inside list must go
+    * how to mix numbered lists and bullet lists
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 17: Lists inside lists</title>
+</head>
+<body>
+
+  <h1>Lists inside lists</h1>
+
+  <!--
+    A NESTED LIST is a list inside a list item.
+
+    THE RULE: the inside list goes INSIDE the <li> it belongs to,
+    BEFORE that item's closing </li> tag.
+
+        <li>South West          the item starts
+          <ul>                  the inside list starts
+            <li>Lagos</li>
+          </ul>                 the inside list ends
+        </li>                   the item ends
+
+    Good indentation makes this easy to see.
+    The browser changes the bullet shape for each level.
+  -->
+  <h2>Some zones of Nigeria and their states</h2>
+  <ul>
+    <li>South East
+      <ul>
+        <li>Abia</li>
+        <li>Anambra</li>
+        <li>Ebonyi</li>
+        <li>Enugu</li>
+        <li>Imo</li>
+      </ul>
+    </li>
+    <li>South West
+      <ul>
+        <li>Ekiti</li>
+        <li>Lagos</li>
+        <li>Ogun</li>
+        <li>Ondo</li>
+        <li>Osun</li>
+        <li>Oyo</li>
+      </ul>
+    </li>
+    <li>North East
+      <ul>
+        <li>Adamawa</li>
+        <li>Bauchi</li>
+        <li>Borno</li>
+        <li>Gombe</li>
+        <li>Taraba</li>
+        <li>Yobe</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!--
+    You can MIX the two kinds of list.
+    Here a numbered list has bullet lists inside it.
+  -->
+  <h2>What we learn in this course</h2>
+  <ol>
+    <li>HTML: the structure of a page
+      <ul>
+        <li>Text</li>
+        <li>Links and images</li>
+        <li>Tables and forms</li>
+      </ul>
+    </li>
+    <li>CSS: the look of a page
+      <ul>
+        <li>Colours and fonts</li>
+        <li>Layout</li>
+      </ul>
+    </li>
+    <li>JavaScript: the behaviour of a page</li>
+  </ol>
+
+  <!--
+    COMMON MISTAKE
+      Putting the inside list AFTER the closing </li>, straight
+      inside the outside <ul>. That is not correct HTML:
+      only <li> elements may sit directly inside <ul> or <ol>.
+  -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add the South South zone with its six states: Akwa Ibom,
+       Bayelsa, Cross River, Delta, Edo and Rivers.
+    2. Inside "Lagos", add a third level: a list of three places
+       in Lagos (for example Ikeja, Lekki and Yaba).
+    3. Under "JavaScript" add two sub-points of your own.
+  -->
+
+</body>
+</html>

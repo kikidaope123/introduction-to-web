@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--
+  LESSON 39: MINI-PROJECT - A SEMESTER RESULT SLIP
+  ================================================
+  A real-world table that uses everything from lessons 35 to 38:
+  a caption, header cells with scope, the three parts of a table,
+  and merged cells. A little CSS makes it easy to read.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Result slip: Ada Okafor, first semester</title>
+
+  <style>
+    body {
+      font-family: Arial;
+    }
+    h1 {
+      color: green;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 6px 12px;
+    }
+    caption {
+      font-size: 18px;
+      padding: 8px;
+    }
+    thead {
+      background-color: green;
+      color: white;
+    }
+    tfoot {
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Department of Information Technology</h1>
+
+  <!-- The details of the student: each name has a value, so a <dl> fits well. -->
+  <dl>
+    <dt>Name</dt>
+    <dd>Ada Okafor</dd>
+
+    <dt>Matriculation number</dt>
+    <dd>IFT/2025/001</dd>
+
+    <dt>Level</dt>
+    <dd>200</dd>
+  </dl>
+
+  <!-- ===== THE RESULT TABLE ===== -->
+  <table>
+    <caption>First semester result, 2025/2026 session</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Course code</th>
+        <th scope="col">Course title</th>
+        <th scope="col">Units</th>
+        <th scope="col">Score</th>
+        <th scope="col">Grade</th>
+        <th scope="col">Points</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">IFT 203</th>
+        <td>Introduction to Web Technologies</td>
+        <td>2</td>
+        <td>78</td>
+        <td>A</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <th scope="row">IFT 205</th>
+        <td>Introduction to Information Systems</td>
+        <td>2</td>
+        <td>65</td>
+        <td>B</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <th scope="row">IFT 211</th>
+        <td>Digital Logic Design</td>
+        <td>2</td>
+        <td>58</td>
+        <td>C</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <th scope="row">COS 201</th>
+        <td>Computer Programming I</td>
+        <td>3</td>
+        <td>72</td>
+        <td>A</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th scope="row">MTH 201</th>
+        <td>Mathematical Methods I</td>
+        <td>2</td>
+        <td>49</td>
+        <td>D</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th scope="row">GST 212</th>
+        <td>Philosophy, Logic and Human Existence</td>
+        <td>2</td>
+        <td>61</td>
+        <td>B</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <th scope="row">ENT 211</th>
+        <td>Entrepreneurship and Innovation</td>
+        <td>2</td>
+        <td>70</td>
+        <td>A</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <!-- "Total" covers the first two columns. -->
+        <th scope="row" colspan="2">Total</th>
+        <td>15</td>
+        <!-- One empty cell covers the Score and Grade columns. -->
+        <td colspan="2"></td>
+        <td>61</td>
+      </tr>
+      <tr>
+        <!-- 61 points divided by 15 units = 4.07 -->
+        <th scope="row" colspan="5">Grade Point Average (GPA)</th>
+        <td>4.07</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- ===== A SECOND, SMALL TABLE: the key to the grades ===== -->
+  <h2>Key to the grades</h2>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Score</th>
+        <th scope="col">Grade</th>
+        <th scope="col">Points for each unit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>70 to 100</td><td>A</td><td>5</td></tr>
+      <tr><td>60 to 69</td><td>B</td><td>4</td></tr>
+      <tr><td>50 to 59</td><td>C</td><td>3</td></tr>
+      <tr><td>45 to 49</td><td>D</td><td>2</td></tr>
+      <tr><td>40 to 44</td><td>E</td><td>1</td></tr>
+      <tr><td>0 to 39</td><td>F</td><td>0</td></tr>
+    </tbody>
+  </table>
+
+  <p><small>This is a sample for the HTML lessons. It is not a real result.</small></p>
+
+  <!--
+    HOW THE NUMBERS WORK
+      Points = units x points for the grade.   IFT 203: 2 x 5 = 10
+      GPA    = total points / total units.     61 / 15 = 4.07
+
+    NOTE ON LAYOUT
+      In the small table each row is written on ONE line, to save
+      space. This is fine when the cells are very short.
+
+    YOUR PROJECT
+    ============
+    1. Save a copy of this file as  my-result.html
+    2. Put in your own name and the courses you offer.
+    3. Type in the scores you HOPE to get. Work out the points,
+       the totals and the GPA, and check them with a calculator.
+    4. Add a column called "Remark" (for example "Pass").
+       Remember to change the colspan values in the foot!
+  -->
+
+  <!-- LESSON LINKS -->
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+  LESSON 03: TAGS AND ELEMENTS
+  ============================
+  You will learn:
+    * what a tag is, and what an element is
+    * how to put one element inside another (nesting)
+    * that a few tags work alone, with no closing tag
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 03: Tags and elements</title>
+</head>
+<body>
+
+  <!--
+    WHAT IS A TAG?
+    A tag is a word inside angle brackets, like <h1> or <p>.
+    Most tags come in pairs:
+
+        <p>   Hello, Nigeria!   </p>
+        ^^^                     ^^^^
+     opening tag             closing tag (it has a slash)
+
+    opening tag + content + closing tag  =  one ELEMENT.
+
+    The tag tells the browser what KIND of thing the content is.
+    <h1> means "a big heading". <p> means "a paragraph".
+    You will study both of them soon. For now, look at their shape.
+  -->
+  <h1>Tags and elements</h1>
+
+  <p>This sentence is inside a paragraph element.</p>
+
+  <!--
+    NESTING: an element can sit INSIDE another element.
+    Here a <b> element (bold text) sits inside a <p> element.
+
+    RULE: close the inside element first.
+        RIGHT:   <p> <b> ... </b> </p>
+        WRONG:   <p> <b> ... </p> </b>
+    Think of a small box inside a big box. You must close
+    the small box before you can close the big one.
+  -->
+  <p>This paragraph has <b>two bold words</b> inside it.</p>
+
+  <!--
+    EMPTY ELEMENTS: a few tags have no content and no closing tag.
+    <br> is one of them. It means "start a new line here".
+    <meta>, which you met in the head, is another one.
+  -->
+  <p>This is the first line.<br>This is the second line.</p>
+
+  <!--
+    GOOD HABITS
+      * Write tag names in lowercase:  <p>  not  <P>.
+      * Never forget the closing tag.
+      * Close tags in the opposite order to the order you opened them.
+  -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Add a new paragraph with your name in it.
+    2. Make one word in your paragraph bold with <b> and </b>.
+    3. Experiment: delete the closing tag </b> from the code above.
+       Save and refresh. What happens to the rest of the page?
+       (Put the closing tag back afterwards.)
+  -->
+
+</body>
+</html>

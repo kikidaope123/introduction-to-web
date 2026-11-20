@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+  LESSON 34: ONE RULE FOR MANY ELEMENTS
+  =====================================
+  You will learn:
+    * how to write CSS rules inside a <style> element in the head
+    * the shape of a CSS rule: selector, property and value
+    * how to write a comment in CSS
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 34: One rule for many elements</title>
+
+  <!--
+    THE STYLE ELEMENT
+    The <style> element lives in the head. Inside it we write CSS
+    RULES. One rule can change EVERY element of a kind on the page.
+
+        p {                    <== the SELECTOR: which elements?
+          color: navy;         <== a property and its value
+          font-size: 18px;     <== another property and its value
+        }                      <== the rule ends
+
+    Read it like this: "Every paragraph is navy and 18 pixels high."
+  -->
+  <style>
+    /* This is a CSS comment. It starts with slash-star
+       and ends with star-slash. HTML comments do not work here. */
+
+    /* Every level 1 heading on the page */
+    h1 {
+      color: green;
+      text-align: center;
+    }
+
+    /* Every level 2 heading on the page */
+    h2 {
+      color: white;
+      background-color: green;
+    }
+
+    /* Every paragraph on the page */
+    p {
+      color: navy;
+      font-size: 18px;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>One rule for many elements</h1>
+
+  <h2>Abuja</h2>
+  <p>Abuja is the capital of Nigeria. It is in the centre of the country.</p>
+  <p>The city was built in the 1980s and became the capital in 1991.</p>
+
+  <h2>Lagos</h2>
+  <p>Lagos is the largest city in Nigeria and one of the largest in Africa.</p>
+  <p>It was the capital of Nigeria until 1991.</p>
+
+  <h2>Kano</h2>
+  <p>Kano is the largest city in the north. It is more than a thousand years old.</p>
+
+  <!--
+    LOOK AT THE BODY
+    There is not one style attribute in it. The HTML is clean, and
+    all the styling is in ONE place. To make every paragraph red,
+    you change ONE word in the head.
+
+    This is the big idea of the Web:
+        HTML = the structure      CSS = the look
+    Keep them apart, and both are easier to change.
+  -->
+
+  <!-- LESSON LINKS -->
+
+  <!--
+    TRY IT YOURSELF
+    ===============
+    1. Change the colour of all the paragraphs with ONE edit.
+    2. Add a new rule that gives the body a background colour:
+           body {
+             background-color: lightyellow;
+           }
+    3. Add a fourth city with a heading and a paragraph.
+       Do you need to write any new CSS for it? Why not?
+  -->
+
+</body>
+</html>
